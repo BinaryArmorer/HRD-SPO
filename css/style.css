@@ -1,0 +1,193 @@
+@font-face {    /* Добавляем шрифт Raleway */
+    font-family: Raleway;
+    src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf')
+}
+html, body { 
+    font-family: Raleway;
+    background-color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+main {
+    min-height: 100%;
+    padding: 10px;
+}
+main .h1_center {
+    text-align: center;
+}
+nav {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    position: sticky;
+    padding: 10px;
+    background: #8ac1ff;
+    border-bottom: 1px solid black;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 15px #000000 ;
+}
+nav .nav_a_hover {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    margin: 5px;
+}
+.nav_a_hover:hover {
+    background-color: white;
+    border-radius: 10px;
+}
+.nav_notification {
+    float: right;
+    border: none;
+    background: none;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.nav_notification:hover {
+    background-color: white;
+    border-radius: 10px;
+}
+footer {
+    position: relative;
+    background-color: #8ac1ff;
+    padding: 20px;
+    /* margin: 10px; */
+    text-align: center;
+    border-top: 1px solid black;
+    margin-top: 100px;
+    box-shadow: 0 0 15px #000000;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-left {
+    width: 50%;
+}
+.footer-right {
+    width: 50%;
+}
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.footer-right a {
+    margin-right: 10px;
+}
+.footer-right img {
+    vertical-align: middle;
+}
+.FAQ h1 {
+    text-align: center;
+    font-size: 24px;
+}
+.FAQ ol, li, p {
+    font-size: 20px;
+}
+.form_close {
+    background: no-repeat url('../img/cls.png');
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 20px;
+    width: 20px;
+}
+.form_close:hover {
+    opacity: 1;
+}
+
+/* INDEX.HTML STYLES */
+.vacancy_section {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 30px;
+    justify-content: center;
+}
+.vacancy_elements {
+    overflow: hidden;
+    word-break: normal; /* Если текст ушел поменять значение*/ 
+    hyphens:auto;  
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 12px 12px 0px 1px #8ac1ff, 0px 0px 20px 1px rgba(0, 0, 0, 0.712);
+    background: rgb(255, 255, 255);
+}
+.vacancy_elements h2, h3 {
+    text-align: center;
+}
+.vacancy_elements .p_center {
+    text-align: center;
+}
+.vacancy_elements .vacancy_button_container {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.vacancy_elements button{
+    width: 130px;
+    padding: 10px 20px;
+    background-color: #5e5e5e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.vacancy_elements button:hover{
+    background: green;
+}   
+.vacancy_elements img {
+    width: 100%;
+    border-radius: 25px;
+}
+.vacancy_elements .vacancy_img_container {
+    color: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+@media (max-width: 1000px) {
+    .vacancy_section{
+        grid-template-columns: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .vacancy_section{
+        grid-template-columns: 95%;
+    }
+}
+/* NOTIFICATIONS */
+.notifications {
+    position: fixed;
+    background: #8ac1ff;
+    border: 1px solid black;
+    width: 40%;
+    height: 60%;
+    padding: 20px;
+}
+.notifications p {
+    text-align: center;
+}
+
+
+/* DEBUG ZONE*/
+/* .debug-border {
+    border: 1px solid Red;
+}
+.debug-none {
+    display: none;
+}
+* {
+    box-sizing: border-box;
+    border: 1px solid blue;
+} */
