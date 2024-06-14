@@ -4,7 +4,7 @@
     width: 400px;
     height: 200px;
     border: 1px solid black;
-    background: #8ac1ff;
+    background: #EE6800;
 }
 .form_registration_submit {
     width: 100%;
@@ -36,7 +36,7 @@
     height: min-content;
     border-radius: 10px;
     border: 1px solid black;
-    background: #8ac1ff;
+    background: #EE6800;
 }
 .form_success_registration p{
     display: flex;
