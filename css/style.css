@@ -58,6 +58,7 @@ footer {
     border-top: 1px solid black;
     margin-top: 100px;
     box-shadow: 0 0 15px #000000;
+    color: #ffffff;
 }
 .footer-content {
     display: flex;
@@ -166,19 +167,6 @@ footer {
         grid-template-columns: 95%;
     }
 }
-/* NOTIFICATIONS */
-.notifications {
-    position: fixed;
-    background: #EE6800;
-    border: 1px solid black;
-    width: 40%;
-    height: 60%;
-    padding: 20px;
-}
-.notifications p {
-    text-align: center;
-}
-
 
 /* DEBUG ZONE*/
 /* .debug-border {
